@@ -456,7 +456,7 @@ const Jobs = () => {
         Find your dream <span>job</span>
       </p>
       <div className="Job_search_container">
-        <div className="job_search">
+        
           <div className="search_icon">
             <img src={image2} alt="" />
             <input
@@ -475,7 +475,7 @@ const Jobs = () => {
             />
           </div>
           <button className="search_job">Search Job</button>
-        </div>
+        
       </div>
       <div className="job_selection">
         <div class="job_options">

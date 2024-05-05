@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 import "./crousele.css";
 import image35 from "../../assets/leftarrow.svg";
 import image36 from "../../assets/rightarrow.svg";
@@ -10,6 +10,11 @@ import image38 from '../../assets/profile2.svg'
 import image39 from '../../assets/profile3.svg'
 
 const Crousele = () => {
+  const carouselRef = useRef(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [totalPages, setTotalPages] = useState(1);
+  const [totalCards, setTotalCards] = useState(0);
+
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -17,7 +22,7 @@ const Crousele = () => {
       items: 5,
     },
     desktop: {
-      breakpoint: { max: 3000, min: 1024 },
+      breakpoint: { max: 1920, min: 1025 },
       items: 3,
     },
     tablet: {
@@ -67,11 +72,34 @@ const Crousele = () => {
       profileJob:"Intreprator"
     },
     
-  ]
+  ];
 
-  const client = clientData.map(item=> (
-    <Card image = {item.profileImage} name ={item.profileName} job={item.profileJob}/>
-  ))
+  const client = clientData.map(item => (
+    <Card key={item.id} image={item.profileImage} name={item.profileName} job={item.profileJob} />
+  ));
+
+  useEffect(() => {
+    if (carouselRef.current) {
+      const { currentSlide, slidesToShow, totalItems } = carouselRef.current.state;
+      const totalPages = Math.ceil(totalItems / slidesToShow);
+      setCurrentPage(Math.ceil((currentSlide + 1) / slidesToShow));
+      setTotalPages(totalPages);
+      setTotalCards(totalItems);
+    }
+  }, [clientData, currentPage]);
+
+  const handleLeftButtonClick = () => {
+    if (carouselRef.current) {
+      carouselRef.current.previous();
+    }
+  };
+
+  const handleRightButtonClick = () => {
+    if (carouselRef.current) {
+      carouselRef.current.next();
+    }
+  };
+
   return (
     <>
       <div className="what_client">
@@ -79,24 +107,29 @@ const Crousele = () => {
           <p className="what_paragraph">
             What our client say about <span>Pacific Hunt</span>
           </p>
-          {/* <div className="what_buttons">
-            <button className="what_left">
+          <div className="what_buttons">
+            <button className="what_left" onClick={handleLeftButtonClick}>
               <img src={image35} alt="" />
             </button>
-            <div className="page_outof">
-              <span className="page">2</span>/14
-            </div>
-            <button className="what_right">
+            {/* <div className="page_outof">
+              <span className="page">{currentPage}</span>/{totalPages}
+            </div> */}
+            <button className="what_right" onClick={handleRightButtonClick}>
               <img src={image36} alt="" />
             </button>
-          </div> */}
+          </div>
         </div>
         
-          <Carousel responsive={responsive} className="card_conatiner">
+        <Carousel ref={carouselRef} 
+        responsive={responsive}
+        swipeable={true}
+        draggable={true}
+        infinite={true}
+         
+        className="card_container">
           {client}
-          </Carousel>
-        </div>
-      
+        </Carousel>
+      </div>
     </>
   );
 };

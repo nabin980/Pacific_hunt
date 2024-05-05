@@ -3,11 +3,7 @@ import React, { useState } from "react";
 import image1 from "../../assets/check.svg";
 import image2 from "../../assets/search.svg";
 import image3 from "../../assets/location.svg";
-import image4 from "../../assets/girl.png";
-import image5 from "../../assets/devi.svg";
-import image6 from "../../assets/facebook.svg";
-import image7 from "../../assets/vacancy.svg";
-import image8 from "../../assets/google.svg";
+import image4 from "../../assets/topimg.png";
 import image9 from "../../assets/arrow.svg";
 import image10 from "../../assets/icon1.svg";
 import image11 from "../../assets/icon2.svg";
@@ -63,38 +59,32 @@ const Home = () => {
               growth.
             </div>
             <div className="search_container">
-              <div className="job_search">
-                <div className="search_icon">
-                  <img src={image2} alt="" />
-                  <input
-                    id="search"
-                    type="text"
-                    placeholder="Job title,Keyword..."
-                  />
-                </div>
-
-                <div className="location_icon">
-                  <img src={image3} alt="" />
-                  <input
-                    id="location"
-                    type="text"
-                    placeholder=" Enter location"
-                  />
-                </div>
-                <button className="search_job">Search Job</button>
+              <div className="search_icon">
+                <img src={image2} alt="" />
+                <input
+                  id="search"
+                  type="text"
+                  placeholder="Job title,Keyword..."
+                />
               </div>
+
+              <div className="location_icon">
+                <img src={image3} alt="" />
+                <input
+                  id="location"
+                  type="text"
+                  placeholder=" Enter location"
+                />
+              </div>
+              <button className="search_job">Search Job</button>
             </div>
             <p className="paragraph4">
-              <span className="popular">Popular Searches:</span>
-              Designer,Devloper,Programmer,Architect.
+              <span className="popular">Popular Searches:</span> &nbsp;
+              Designer, Devloper, Programmer, Architect.
             </p>
           </div>
           <div className="right">
             <div className="social_media">
-              <img src={image5} alt="" className="facebook" />
-              <img src={image6} alt="" className="google" />
-              <img src={image7} alt="" className="random" />
-              <img src={image8} alt="" className="vacancy" />
               <img src={image4} alt="" className="girl" />
             </div>
           </div>
@@ -158,7 +148,8 @@ const Home = () => {
             <p className="categories">Top Job Opeaning</p>
             <Link
               to="/Jobs"
-              className={menu === 'Jobs' ? 'active' : ''} onClick={() => setActiveMenu('Jobs')}
+              className={menu === "Jobs" ? "active" : ""}
+              onClick={() => setActiveMenu("Jobs")}
             >
               <button className="see_more">
                 <p>See More</p>
@@ -399,7 +390,7 @@ const Home = () => {
         </div>
         <div className="renowned_companies">
           <p className="company_paragraph">
-            Join in globally <span>renowned</span> companies
+            Join in globally &nbsp;<span>renowned</span>&nbsp; companies
           </p>
           <div className="companies_logo">
             <img src={image23} alt="" />
@@ -415,13 +406,13 @@ const Home = () => {
           <div className="seemore">
             <p className="categories">Featured Companies</p>
             <Link to="/Companies">
-            <button className="see_more">
-              <p>See More</p>
-              <img src={image9} alt="" />
-            </button>
+              <button className="see_more">
+                <p>See More</p>
+                <img src={image9} alt="" />
+              </button>
             </Link>
           </div>
-            
+
           <div className="high_companies">
             <div className="job_content">
               <div className="job_top">
@@ -528,7 +519,6 @@ const Home = () => {
           </div>
         </div>
         <Crousele />
-        
       </div>
     </>
   );

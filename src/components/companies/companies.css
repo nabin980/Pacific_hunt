@@ -31,5 +31,44 @@
     margin: 3rem 7rem;
     display: grid;
     gap: 25px;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+}
+@media screen and (max-width:768px){
+    #company_search, #company_location{
+        width: 11rem;
+    }
+    .industry_type{
+        display: none;
+    }
+    .company_card_grid{
+        margin: 3rem 4rem;
+    }  
+}
+
+@media screen and (max-width: 450px){
+    #company_search {
+        width: 7rem;
+        margin-left: 0.2rem;
+        font-size: 12px;
+      }
+      #company_location{
+        width: 7rem;
+        margin-left: 0.2rem;
+        font-size: 12px;
+      }
+      .Companies{
+        .search_icon{
+            padding-left: 0.3rem;
+        }
+      }
+      .search_companies{
+        height: 5vh;
+        padding: 0.3rem;
+        
+        width: 10vh;
+      }
+      .company_card_grid {
+        margin: 3rem 2rem;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      }
 }

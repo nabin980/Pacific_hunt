@@ -1,17 +1,11 @@
-.what_card{
-    margin-left: 7rem;
-    width: 50%;
-   
-   
-}
+
 .card_content{
     background-color: white;
-    min-width: 500px;
+    width: 28vw;
     padding: 2rem;
-    
-    border-radius: 12px;
-    
+    border-radius: 12px; 
 }
+
 .card_top{
     padding-bottom: 2rem;
 }
@@ -38,4 +32,22 @@ line-height: 22px;
     color: rgba(134, 136, 138, 1);
     font-size: 12px;
     font-weight: 400;
+}
+@media screen and (max-width : 768px) {
+    .card_content{
+        width: 45vw;
+       
+    }
+    .what_top{
+        padding: 3rem 3rem;
+    }
+   
+}
+@media screen and (max-width : 451px) {
+    .what_top{
+        padding: 3rem 2rem;
+    }
+    .card_content {
+        width: 86vw;
+      }
 }

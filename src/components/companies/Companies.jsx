@@ -309,7 +309,7 @@ const Companies = () => {
         Explore the <span>best</span> companies
       </p>
       <div className="Job_search_container">
-        <div className="job_search">
+       
           <div className="search_icon">
             <img src={image2} alt="" />
             <input
@@ -338,7 +338,7 @@ const Companies = () => {
             </select>
           </div>
           <button className="search_companies">Search Companies</button>
-        </div>
+        
       </div>
       <div className="result_showing_job">
         <div className="available_result">

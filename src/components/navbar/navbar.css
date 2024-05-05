@@ -1,74 +1,145 @@
-.navbar_container{
-    display: flex;
-    background-color: rgba(255, 255, 255, 1);
-    justify-content: space-between;
+.navbar_container {
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  justify-content: space-between;
 }
-.logo{
-    margin: 1rem;
-    padding-left: 7rem;
+.logo {
+  margin: 1rem;
+  padding-left: 7rem;
 }
 .nav_links_container {
-   float: left;
-   
-    padding-top: 1.8rem;
-    padding-right:2rem;
-    display: flex;
-    gap: 20px;
+  float: left;
+
+  padding-top: 1.8rem;
+  padding-right: 2rem;
+  display: flex;
+  gap: 20px;
 }
-.nav_links_container a{
-    text-decoration: none;
-    color: black;
-    margin-left: 1rem;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+.nav_links_container a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
-.nav_links_container a :hover{
+.nav_links_container a :hover {
+  cursor: pointer;
+}
+
+.nav_button {
+  display: flex;
+  gap: 20px;
+  margin-right: 7rem;
+  margin-top: 1.2rem;
+}
+
+.nav_button button {
+  border-radius: 4px;
+  height: 45px;
+  font-size: 14px;
+  font-weight: 500;
+  width: 128px;
+}
+.nav_button button:hover {
+  cursor: pointer;
+}
+
+.post_ajob {
+  border: 2px solid;
+  background-color: white;
+  border-color: rgba(1, 163, 224, 1);
+  color: rgba(1, 163, 224, 1);
+}
+.sign_up {
+  border: none;
+  background-color: rgba(1, 163, 224, 1);
+  color: white;
+}
+
+.nav_links_container a.active {
+  position: relative;
+  color: rgba(1, 163, 224, 1);
+  font-weight: 600;
+}
+
+.nav_links_container a.active::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 5px;
+  border-radius: 6px;
+  background: rgba(1, 163, 224, 1);
+}
+.menu_icons div {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  display: none;
+}
+.svg-inline--fa {
+  height: 3em;
+  color: rgba(1, 163, 224, 1);
+}
+.menu_icons {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .logo {
+    padding-left: 3rem;
+  }
+  .post_ajob {
+    display: none;
+  }
+  .nav_button {
+    margin-right: 3rem;
+  }
+  .nav_button button {
+    height: 3vh;
+    width: 10vw;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+}
+@media screen and (max-width: 451px) {
+  .logo {
+    padding-left: 1rem;
+  }
+  .menu_icons {
+    display:flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-right: 1rem;
     cursor: pointer;
-}
-
-.nav_button{
+  }
+  .nav_links_container {
     display: flex;
-    gap: 20px;
-    margin-right: 7rem;
-    margin-top: 1.2rem;
+    flex-direction: column;
+  }
+
+  .sign_up {
+    display: none;
+  }
+  .nav_links_container {
+    position: absolute;
+    display: none;
+    right: 0;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    padding-bottom: 1rem;
+    box-shadow: -9px 17px 14px -1px rgba(147, 147, 147, 0.62);
+    -webkit-box-shadow: -9px 17px 14px -1px rgba(147, 147, 147, 0.62);
+    -moz-box-shadow: -9px 17px 14px -1px rgba(147, 147, 147, 0.62);
+  }
+  .navbar_container{
+    position: fixed;
+    width: 100%;
+  }
+  .nav_links_container.active {
+    display: flex;
+    flex-direction: column;
 }
-
-.nav_button button{
-        border-radius: 4px;
-        height: 45px;
-        font-size: 14px;
-        font-weight: 500;
-        width: 128px;
-    }
-.nav_button button:hover{
-    cursor: pointer;
+.nav_button {
+    display: none;}
+  
 }
-
-    .post_ajob {
-        border: 2px solid;
-        background-color: white;
-        border-color: rgba(1, 163, 224, 1);
-        color: rgba(1, 163, 224, 1);
-    }
-    .sign_up {
-        border: none;
-        background-color: rgba(1, 163, 224, 1);
-        color: white;
-    }
-
-    .nav_links_container a.active{
-        position: relative; 
-        color: rgba(1, 163, 224, 1); 
-        font-weight: 600;
-    }
-    
-    .nav_links_container a.active::after{
-        content: '';
-        
-        display: block;
-        width: 30px;
-        height: 5px;
-        border-radius: 6px;
-        background:rgba(1, 163, 224, 1);
-    }

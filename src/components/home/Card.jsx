@@ -6,7 +6,7 @@ import image35 from '../../assets/profile1.svg'
 const Card = (props) => {
   return (
     <>
-      <div className="what_card">
+      
        
         <div className="card_content">
           <div className="card_top">
@@ -29,7 +29,7 @@ const Card = (props) => {
             </div>
           </div>
         </div>
-      </div>
+      
     </>
   );
 };

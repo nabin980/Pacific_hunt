@@ -43,6 +43,14 @@ line-height: 22px;
     }
    
 }
+
+@media (min-width:450px)and (max-width: 689px){
+    .card_content {
+        width: 84vw;
+    margin-left: 2rem;
+      } 
+}
+
 @media screen and (max-width : 451px) {
     .what_top{
         padding: 3rem 2rem;

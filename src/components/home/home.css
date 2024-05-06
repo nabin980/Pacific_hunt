@@ -168,7 +168,7 @@
   margin-top: 3rem;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-template-rows: repeat(2, 100px);
 }
 .popular_component {
@@ -202,7 +202,7 @@
   margin-top: 3rem;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 .job_content {
   padding: 1.5rem;
@@ -266,6 +266,7 @@
   padding-top: 1rem;
  display: flex;
  gap: 10px; 
+ justify-content: space-evenly;
 }
 .job_detail_top {
   display: flex;
@@ -295,7 +296,7 @@ li::marker {
   font-size: 16px;
   font-weight: 500;
   color: rgba(60, 61, 61, 1);
-  padding-top: 1.7rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
 }
@@ -333,7 +334,7 @@ li::marker {
 .high_companies {
   margin-top: 3rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 30px;
 }
 .job_location_icon {
@@ -477,9 +478,53 @@ li::marker {
      
   }
 }
+
+@media (min-width:450px)and (max-width: 689px){
+  .high_companies{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .left{
+    padding-left: 3rem;
+    width: 98%;
+    
+  }
+  #search,#location{
+    width: 24vw;
+    margin-left: 0.3rem;
+  }
+  .search_icon {
+    padding-left: 0.2rem;
+   
+  }
+  .search_job {
+    width: 27vw;
+    margin-right: 0.5rem;
+    height: 4vh;
+  }
+  .feature_companies {
+    margin: 5rem 3rem;
+  }
+  .infomation, .tech {
+   
+    font-size: 12px;
+    
+  }
+  .popular_categories{
+    padding: 5rem 3rem;
+  }
+  .popular_content {
+  
+    display: grid;
+ 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+  }
+}
+
 @media screen and (max-width : 451px){
   .left{
     padding-left: 2rem;
+    overflow: hidden;
   }
   .paragraph3{
     width: 90%;
@@ -488,7 +533,7 @@ li::marker {
     padding-left: 0.5rem;
   }
   #search,#location{
-    width: 28vw;
+    width: 24vw;
     margin-left: 0.3rem;
   }
   .search_job {
@@ -496,6 +541,7 @@ li::marker {
     font-size: 12px;
     height: 4vh;
     width: 17vw;
+    
   }
   .paragraph4{
     padding-right: 1rem;
@@ -553,7 +599,7 @@ li::marker {
   }
   .infomation, .tech {
    
-    font-size: 14px;
+    font-size: 13px;
     
   }
  

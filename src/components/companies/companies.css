@@ -120,8 +120,11 @@
 
 @media (min-width:450px)and (max-width: 689px){
     .company_paragraph {
-        display: inline;
-        font-size: 21px;
+      display: block;
+      font-size: 21px;
+      align-content: center;
+      text-align: center;
+      padding-bottom: 0;
       }
       #company_search, #company_location{
         width: 24vw;
@@ -147,7 +150,7 @@
       .companies_logo {
         display: grid;
         padding-top: 1rem;
-        gap: 4rem;
+        gap: 2.5rem;
         grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
       }
 }
@@ -178,4 +181,17 @@
         margin: 3rem 2rem;
         grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
       }
+}
+@media screen and (max-width: 396px){
+  .companies_logo {
+    display: flex;
+    flex-direction: column;
+    div{
+      display: flex;
+      justify-content: center;
+    }
+    img{
+      height: 24px;
+    }
+  }
 }

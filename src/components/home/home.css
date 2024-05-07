@@ -800,9 +800,11 @@ grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     padding: 3rem 2rem;
   }
   .company_paragraph{
-    display: inline;
-    
+    display: block;
     font-size: 21px;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 0;
   }
   .companies_logo {
     margin-top: 2rem;

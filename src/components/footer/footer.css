@@ -239,7 +239,7 @@
 @media (min-width:450px)and (max-width: 689px){
   .footer_right {
     gap: 30px;
-     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
      width: 84vw;
    }
    .stay_connected_content{
@@ -260,15 +260,29 @@
   .footer_paragraph{
     width: 85vw;
   }
+  .footer_left{
+    width: 40%;
+  }
   .footer_right {
-   gap: 30px;
+    gap: 30px;
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    width: 45%;
+    width: 40%;
+    padding-right: 2rem;
   }
   .footer_top {
     padding: 3rem 2rem;
   }
   .footer_down {
     padding: 0rem 2rem;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .stay_button {
+    
+  
+    width: 100%;
+    
+  
   }
 }

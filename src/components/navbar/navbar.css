@@ -230,3 +230,13 @@
     display: none;}
   
 }
+@media screen and (max-width: 425px) {
+  .navbar_container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 3;
+  }
+}
+
+

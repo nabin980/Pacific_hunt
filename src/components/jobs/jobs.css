@@ -146,6 +146,139 @@
   background-color: rgba(1, 163, 224, 1);
   color: white;
 }
+
+@media (min-width:1250px) and (max-width:1550px){
+  .dream_job{
+    padding: 2rem 5rem;
+  }
+  .Job_search_container {
+    margin: 2rem 5rem;
+    #job_search {
+      width: 35vw;
+    }
+    .search_icon{
+      padding-left: 0;
+    }
+    #job_location {
+      width: 35vw;
+    }
+    .search_job{
+      margin-right: 0rem;
+    }
+  }
+  .job_options {
+    padding: 1rem 5rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .job_selection hr {
+    margin: 2rem 5rem;
+ 
+  }
+  .result_showing_job {
+    margin: 2rem 5rem;
+  }
+  .job_giving_company {
+    margin: 3rem 5rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .pagination {
+    margin: 3rem 5rem;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1250px){
+  .dream_job{
+    padding: 2rem 3rem;
+  }
+  .Job_search_container {
+    margin: 2rem 3rem;
+    #job_search {
+      width: 35vw;
+    }
+    .search_icon{
+      padding-left: 0;
+    }
+    #job_location {
+      width: 35vw;
+    }
+    .search_job{
+      margin-right: 0rem;
+    }
+  }
+  .job_options {
+    padding: 1rem 3rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .job_selection hr {
+    margin: 2rem 3rem;
+ 
+  }
+  .result_showing_job {
+    margin: 2rem 3rem;
+  }
+  .job_giving_company {
+    margin: 3rem 3rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .pagination {
+    margin: 3rem 3rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:1000px){
+  .dream_job{
+    padding: 2rem 2rem;
+  }
+  .Job_search_container {
+    margin: 2rem 2rem;
+    #job_search {
+      width: 34vw;
+    }
+    .search_icon{
+      padding-left: 0;
+    }
+    #job_location {
+      width: 31vw;
+    }
+    .search_job{
+      margin-right: 0rem;
+    }
+  }
+  .job_options {
+    padding: 1rem 2rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .job_selection hr {
+    margin: 2rem 2rem;
+ 
+  }
+  .result_showing_job {
+    margin: 2rem 2rem;
+  }
+  .job_giving_company {
+    margin: 3rem 2rem;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .pagination {
+    margin: 3rem 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .dream_job {
     padding: 2rem 4rem;
@@ -155,6 +288,10 @@
   }
   #job_search {
     width: 12rem;
+   
+  }
+  .search_job{
+    height: 4vh;
   }
   #job_location {
     width: 12rem;
@@ -205,7 +342,7 @@
     margin: 2rem 3rem;
   }
   .search_job{
-    width: 15vw;
+    width: 13vw;
   }
   #job_search {
     width: 24vw;

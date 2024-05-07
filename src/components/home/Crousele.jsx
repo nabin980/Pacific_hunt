@@ -22,11 +22,11 @@ const Crousele = () => {
       items: 5,
     },
     desktop: {
-      breakpoint: { max: 1920, min: 1025 },
+      breakpoint: { max: 1920, min: 1000 },
       items: 3,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 690 },
+      breakpoint: { max: 1000, min: 690 },
       items: 2,
     },
     mobile: {

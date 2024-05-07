@@ -55,6 +55,35 @@
   .page{
     color: rgba(1, 163, 224, 1);
   }
+
+  @media (min-width:1250px) and (max-width:1550px){
+    .what_top{
+      padding: 3rem 5rem;
+  }
+  .card_container{
+    padding-left: 2rem;
+  }
+  }
+
+  @media (min-width:1000px) and (max-width:1250px){
+    .what_top{
+        padding: 3rem 4rem;
+    }
+    .card_container{
+      padding-left: 1.5rem;
+    }
+}
+
+  @media (min-width:768px) and (max-width:1000px){
+    .what_top{
+      padding: 3rem 2rem;
+    }
+    .card_container{
+      padding-left: 2rem;
+    }
+    
+  }
+
   @media screen and (max-width : 768px){
     .card_container{
       padding-left: 1rem;

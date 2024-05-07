@@ -84,6 +84,40 @@
 .menu_icons {
   display: none;
 }
+
+@media (min-width:1250px) and (max-width:1550px){
+  .logo{
+    padding-left: 4rem;
+  }
+  .nav_button{
+    margin-right: 5rem;
+  }
+}
+
+@media (min-width:1000px) and (max-width:1250px){
+  .logo{
+    padding-left: 3rem;
+  }
+  .nav_button{
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width:768px) and (max-width:1000px) {
+  .logo {
+    padding-left: 1rem;
+  }
+  .post_ajob{
+    display: none;
+  }
+  .nav_button{
+    margin-right: 2rem;
+  }
+  
+ 
+  
+}
+
 @media screen and (max-width: 768px) {
   .logo {
     padding-left: 3rem;
@@ -174,8 +208,9 @@
     -moz-box-shadow: -9px 17px 14px -1px rgba(147, 147, 147, 0.62);
   }
   .navbar_container{
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
+    top: 0;
   }
   .nav_links_container.active {
     display: flex;

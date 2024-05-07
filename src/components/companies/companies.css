@@ -33,6 +33,53 @@
     gap: 25px;
     grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
 }
+
+@media (min-width:1250px) and (max-width:1550px){
+  #company_search,#company_location,.industry_type select{
+    width: 23vw;
+  }
+  .search_companies{
+    width: 10vw;
+    height: 5vh;
+    margin-right: 0.5rem;
+    padding: 0;
+  }
+  .company_card_grid{
+    margin: 3rem 5rem;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  }
+}
+
+@media (min-width:1000px) and (max-width:1250px){
+  #company_search,#company_location,.industry_type select{
+    width: 23vw;
+  }
+  .search_companies{
+    width: 10vw;
+    height: 5vh;
+    padding: 0;
+  }
+  .company_card_grid{
+    margin: 3rem 3rem;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  }
+}
+
+@media (min-width:768px) and (max-width:1000px){
+  #company_search,#company_location,.industry_type select{
+    width: 21vw;
+  }
+  .search_companies{
+    width: 12vw;
+    height: 5vh;
+    padding: 0;
+  }
+  .company_card_grid{
+    margin: 3rem 2rem;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  }
+}
+
 @media screen and (max-width:768px){
     #company_search, #company_location{
         width: 11rem;

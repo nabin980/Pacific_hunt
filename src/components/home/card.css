@@ -33,6 +33,25 @@ line-height: 22px;
     font-size: 12px;
     font-weight: 400;
 }
+
+@media (min-width:1250px) and (max-width:1550px){
+    .what_top{
+        padding: 3rem 5rem;
+    }
+}
+
+@media (min-width:1000px) and (max-width:1250px){
+    .card_content{
+        width: 28vw;
+    }
+}
+
+@media (min-width:768px) and (max-width:1000px){
+    .card_content{
+        width: 42vw;
+    }
+}
+
 @media screen and (max-width : 768px) {
     .card_content{
         width: 45vw;

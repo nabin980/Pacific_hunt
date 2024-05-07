@@ -438,9 +438,171 @@ li::marker {
   transform: translate(45rem, -24.45rem);
 }
 
+@media (min-width:1250px) and (max-width:1550px){
+  .left{
+    padding-left: 5rem;
+    .search_container{
+      width: 95%;
+      #search,#location{
+        width: 14vw;
+        margin-left: 0;
+      }
+      .search_icon{
+        padding-left: 0.5rem;
+      }
+      .search_job{
+        margin-right: 0.5rem;
+        width: 7vw;
+      }
+    }
+  }
+  .right{
+    position: relative;
+    .social_media{
+      overflow: hidden;
+      img{
+        position: relative;
+      }
+    }
+  }
+  .paragraph4{
+    padding-bottom: 4.4rem;
+}
+.popular_categories {
+  padding: 5rem 5rem;
+}
+.job_opeaning {
+  margin: 1rem 5rem;
+}
+.renowned_companies{
+  padding: 4rem 5rem;
+}
+.companies_logo{
+  gap: 2rem;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.feature_companies{
+  margin: 5rem 5rem;
+}
+.infomation,.tech{
+  font-size: 15px;
+}
+}
+
+@media (min-width:1000px) and (max-width:1250px){
+  .left{
+    padding-left: 4rem;
+    .search_container{
+      width: 95%;
+      #search,#location{
+        width: 13vw;
+        margin-left: 0;
+      }
+      .search_icon{
+        padding-left: 0.5rem;
+      }
+      .search_job{
+        margin-right: 0.5rem;
+        width: 8vw;
+      }
+    }
+  }
+  .right{
+    position: relative;
+    .social_media{
+      overflow: hidden;
+      img{
+        position: relative;
+      }
+    }
+  }
+  .paragraph4{
+    padding-bottom: 4.4rem;
+  }
+  .popular_categories {
+    padding: 5rem 4rem;
+  }
+  .job_opeaning {
+    margin: 1rem 4rem;
+  }
+  .renowned_companies{
+    padding: 4rem 4rem;
+  }
+  .companies_logo{
+    gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  .feature_companies{
+    margin: 5rem 4rem;
+  }
+  .infomation,.tech{
+    font-size: 16px;
+  }
+  
+}
+
+@media (min-width:768px) and (max-width:1000px){
+  .left{
+    padding-left: 2rem;
+    #search{
+      width: 24vw;
+    }
+   
+    .search_container{
+      width: 85%;
+    }
+    #location{
+      width: 24vw
+    }
+    .search_job{
+      margin-right: 0.5rem;
+      height: 5vh;
+      width: 12vw;
+    }
+  }
+  .right{
+    display: none;
+  }
+  .popular_categories{
+    padding: 5rem 2rem;
+  }
+  .popular_content{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .job_opeaning {
+    margin: 1rem 2rem;
+  }
+  .job_container{
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .renowned_companies {
+    padding: 4rem 2rem;
+  }
+  .companies_logo{
+    display: grid;
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+     
+  }
+  .feature_companies {
+    margin: 5rem 2rem;
+  }
+  .high_companies{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .infomation, .tech{
+    font-size: 11px;
+}
+
+
+}
+
 @media screen and (max-width : 768px) {
   .social_media{
     display: none;
+  }
+  .renowned_companies{
+    padding: 4rem 4rem;
   }
   .popular_categories{
     padding: 5rem 4rem;
@@ -473,8 +635,8 @@ li::marker {
   }
   .companies_logo{
     display: grid;
-    gap: 4rem;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 3rem;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
      
   }
 }

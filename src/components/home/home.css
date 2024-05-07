@@ -438,6 +438,65 @@ li::marker {
   transform: translate(45rem, -24.45rem);
 }
 
+@media (min-width:1550px) and (max-width:2000px){
+  .job_container {
+    
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  .popular_content{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  .left{
+    padding-left: 6rem;
+    .search_container{
+      width: 95%;
+      #search,#location{
+        width: 14vw;
+        margin-left: 0;
+      }
+      .search_icon{
+        padding-left: 0.5rem;
+      }
+      .search_job{
+        margin-right: 0.5rem;
+        width: 7vw;
+      }
+    }
+  }
+  .right{
+    position: relative;
+    .social_media{
+      overflow: hidden;
+      img{
+        position: relative;
+      }
+    }
+  }
+  .paragraph4{
+    padding-bottom: 4.4rem;
+}
+.popular_categories {
+  padding: 5rem 6rem;
+}
+.job_opeaning {
+  margin: 1rem 6rem;
+}
+.renowned_companies{
+  padding: 4rem 6rem;
+}
+.companies_logo{
+  gap: 2rem;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.feature_companies{
+  margin: 5rem 6rem;
+}
+.infomation,.tech{
+  font-size: 15px;
+}
+
+}
+
 @media (min-width:1250px) and (max-width:1550px){
   .left{
     padding-left: 5rem;

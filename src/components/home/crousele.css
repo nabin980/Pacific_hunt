@@ -56,6 +56,15 @@
     color: rgba(1, 163, 224, 1);
   }
 
+  @media (min-width:1550px) and (max-width:2000px){
+    .what_top{
+      padding: 3rem 6rem;
+  }
+  .card_container{
+    padding-left: 3rem;
+  }
+  }
+
   @media (min-width:1250px) and (max-width:1550px){
     .what_top{
       padding: 3rem 5rem;
